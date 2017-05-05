@@ -1,0 +1,27 @@
+/*----------------------------------------------------------------------------*/
+/* Container v0.0.1
+/*----------------------------------------------------------------------------*/
+
+.container
+    display: block
+    margin: 0 auto
+    width: 100%
+    &:after
+        @extend clear
+    &.sm
+        max-width: $window_width_5
+    &.md
+        max-width: $window_width_6
+    &.lg
+        max-width: $window_width_7
+
+.bar + .container
+    padding-top: $navbar_height_1
+    @media (min-height: $window_height_2)
+        padding-top: $navbar_height_2
+    @media (min-height: $window_height_3)
+        padding-top: $navbar_height_3
+    @media (min-height: $window_height_4)
+        padding-top: $navbar_height_4
+    @media (min-height: $window_height_5)
+        padding-top: $navbar_height_5

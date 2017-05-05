@@ -1,0 +1,96 @@
+//  ----------------------------------------------------------------------------
+// Color
+//  ----------------------------------------------------------------------------
+
+$color1: #4285f4
+$color2: #9C27B0
+
+$color1: #FE5000
+$color2: #0085CA
+
+$shadowColor1: color(black a(15%))
+$shadowColor2: color($color1 a(15%) blackness(30%))
+$shadowColor3: color($color2 a(15%) blackness(30%))
+
+$positiveColor: #4caf50
+$negativeColor: #F44336
+
+$darkBackground: color(black whiteness(15%))
+
+$borderRadius: 4px
+
+//  ----------------------------------------------------------------------------
+// Grid
+//  ----------------------------------------------------------------------------
+
+$spacing_1: 8px
+$spacing_2: 2.5vw
+$spacing_3: 16px
+$spacing_4: 20px
+
+$window_width_2: 320px // col xs
+$window_width_3: 640px // col sm
+$window_width_4: 768px // col md
+
+$window_width_5: 1024px // col lg | container sm
+$window_width_6: 1200px // col xl | container md
+$window_width_7: 1440px // col xxl | container lg
+
+//  ----------------------------------------------------------------------------
+// Typography
+//  ----------------------------------------------------------------------------
+
+$fontSize: 16px
+
+//  ----------------------------------------------------------------------------
+// Nav Bar
+//  ----------------------------------------------------------------------------
+
+/*$navbar_height_1: 42px
+$navbar_height_2: 8.5vh
+$navbar_height_3: 64px
+$navbar_height_4: 7vh
+$navbar_height_5: 72px*/
+
+$navbar_height_1: 42px
+$navbar_height_2: 7vh
+$navbar_height_3: 60px
+
+$window_height_2: calc(100 * 42px / 7)
+$window_height_3: calc(100 * 60px / 7)
+
+$sidebar_width: 240px
+
+//  ----------------------------------------------------------------------------
+// Default
+//  ----------------------------------------------------------------------------
+
+*
+    /*font-family: "Noto Sans", "Arial"*/
+    box-sizing: border-box
+    color: color(black lightness(25%))
+    font-family: "Open Sans", "Arial"
+    font-size: $fontSize
+
+body
+    margin: 0
+
+a
+    color: $color1
+
+img
+    display: block
+    width: 100%
+
+//  ----------------------------------------------------------------------------
+// Extensions
+//  ----------------------------------------------------------------------------
+
+@define-extend clear
+    clear: both
+    content: ""
+    display: table
+
+@define-extend before_table
+    content: ""
+    display: table

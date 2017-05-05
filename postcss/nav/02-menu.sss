@@ -1,0 +1,39 @@
+.menu > ul
+    margin-bottom: 0
+    margin-top: 0
+    padding-left: 0
+    &:after
+        @extend clear
+
+.menu > ul.right
+    float: right
+
+.menu > ul > li
+    float: left
+
+.menu > ul > li > a
+    display: block
+    height: $navbar_height_1
+    line-height: $navbar_height_1
+    overflow: hidden
+    padding-left: 16px
+    padding-right: 16px
+    position: relative
+    text-decoration: none
+    text-overflow: ellipsis
+    white-space: nowrap
+    @media (min-height: $window_height_2)
+        height: $navbar_height_2
+        line-height: $navbar_height_2
+    @media (min-height: $window_height_3)
+        height: $navbar_height_3
+        line-height: $navbar_height_3
+
+.bar.dark .menu > ul > li > a
+    color: color(white a(40%))
+
+.bar .menu > ul > li.active > a
+    color: $color2
+
+.bar.dark .menu > ul > li.active > a
+    color: $color1

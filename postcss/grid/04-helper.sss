@@ -1,0 +1,233 @@
+/* Relative ----------------------------------------------------------------- */
+
+.rel
+    position: relative
+
+/* Padding ------------------------------------------------------------------ */
+
+.p-0
+    padding: 0 !important
+
+.p-8
+    padding: 8px !important
+
+.p-sm
+    padding: $spacing_1
+    @media(min-width: $window_width_2)
+        padding: $spacing_2
+    @media(min-width: $window_width_3)
+        padding: $spacing_3
+
+.p-md
+    padding: calc($spacing_1 * 2)
+    @media(min-width: $window_width_2)
+        padding: calc($spacing_2 * 2)
+    @media(min-width: $window_width_3)
+        padding: calc($spacing_3 * 2)
+
+/* Padding Bottom ----------------------------------------------------------- */
+
+.pb-sm
+    padding-bottom: $spacing_1
+    @media(min-width: $window_width_2)
+        padding-bottom: $spacing_2
+    @media(min-width: $window_width_3)
+        padding-bottom: $spacing_3
+
+.pb-md
+    padding-bottom: calc($spacing_1 * 2)
+    @media(min-width: $window_width_2)
+        padding-bottom: calc($spacing_2 * 2)
+    @media(min-width: $window_width_3)
+        padding-bottom: calc($spacing_3 * 2)
+
+.pb-lg
+    padding-bottom: calc($spacing_1 * 4)
+    @media(min-width: $window_width_2)
+        padding-bottom: calc($spacing_2 * 4)
+    @media(min-width: $window_width_3)
+        padding-bottom: calc($spacing_3 * 4)
+
+/* Padding Top -------------------------------------------------------------- */
+
+.pt-sm
+    padding-top: $spacing_1
+    @media(min-width: $window_width_2)
+        padding-top: $spacing_2
+    @media(min-width: $window_width_3)
+        padding-top: $spacing_3
+
+.pt-md
+    padding-top: calc($spacing_1 * 2)
+    @media(min-width: $window_width_2)
+        padding-top: calc($spacing_2 * 2)
+    @media(min-width: $window_width_3)
+        padding-top: calc($spacing_3 * 2)
+
+.pt-lg
+    padding-top: calc($spacing_1 * 4)
+    @media(min-width: $window_width_2)
+        padding-top: calc($spacing_2 * 4)
+    @media(min-width: $window_width_3)
+        padding-top: calc($spacing_3 * 4)
+
+/* Padding Vertical --------------------------------------------------------- */
+
+.pv-sm
+    padding-bottom: $spacing_1
+    padding-top: $spacing_1
+    @media(min-width: $window_width_2)
+        padding-bottom: $spacing_2
+        padding-top: $spacing_2
+    @media(min-width: $window_width_3)
+        padding-bottom: $spacing_3
+        padding-top: $spacing_3
+
+/* Padding Horizontal ------------------------------------------------------- */
+
+.ph-0
+    padding-left: 0 !important
+    padding-right: 0 !important
+
+.ph-sm
+    padding-left: $spacing_1
+    padding-right: $spacing_1
+    @media(min-width: $window_width_2)
+        padding-left: $spacing_2
+        padding-right: $spacing_2
+    @media(min-width: $window_width_3)
+        padding-left: $spacing_3
+        padding-right: $spacing_3
+
+.ph-md
+    padding-left: calc($spacing_1 * 2)
+    padding-right: calc($spacing_1 * 2)
+    @media(min-width: $window_width_2)
+        padding-left: calc($spacing_2 * 2)
+        padding-right: calc($spacing_2 * 2)
+    @media(min-width: $window_width_3)
+        padding-left: calc($spacing_3 * 2)
+        padding-right: calc($spacing_3 * 2)
+
+/* Margin Vertical ---------------------------------------------------------- */
+
+.mv-sm
+    margin-bottom: $spacing_1
+    margin-top: $spacing_1
+    @media(min-width: $window_width_2)
+        margin-bottom: $spacing_2
+        margin-top: $spacing_2
+    @media(min-width: $window_width_3)
+        margin-bottom: $spacing_3
+        margin-top: $spacing_3
+
+/* Margin Bottom ------------------------------------------------------------ */
+
+.mb-0
+    margin-bottom: 0
+
+.mb-xs
+    margin-bottom: calc($spacing_1 / 2)
+    @media(min-width: $window_width_2)
+        margin-bottom: calc($spacing_2 / 2)
+    @media(min-width: $window_width_3)
+        margin-bottom: calc($spacing_3 / 2)
+
+.mb-sm
+    margin-bottom: $spacing_1
+    @media(min-width: $window_width_2)
+        margin-bottom: $spacing_2
+    @media(min-width: $window_width_3)
+        margin-bottom: $spacing_3
+
+.mb-md
+    margin-bottom: calc($spacing_1 * 2)
+    @media(min-width: $window_width_2)
+        margin-bottom: calc($spacing_2 * 2)
+    @media(min-width: $window_width_3)
+        margin-bottom: calc($spacing_3 * 2)
+
+.mb-lg
+    margin-bottom: calc($spacing_1 * 3)
+    @media(min-width: $window_width_2)
+        margin-bottom: calc($spacing_2 * 3)
+    @media(min-width: $window_width_3)
+        margin-bottom: calc($spacing_3 * 3)
+
+/* Margin Top --------------------------------------------------------------- */
+
+.mt-sm
+    margin-top: $spacing_1
+    @media(min-width: $window_width_2)
+        margin-top: $spacing_2
+    @media(min-width: $window_width_3)
+        margin-top: $spacing_3
+
+.mt-md
+    margin-top: calc($spacing_1 * 2)
+    @media(min-width: $window_width_2)
+        margin-top: calc($spacing_2 * 2)
+    @media(min-width: $window_width_3)
+        margin-top: calc($spacing_3 * 2)
+
+.mt-lg
+    margin-top: calc($spacing_1 * 3)
+    @media(min-width: $window_width_2)
+        margin-top: calc($spacing_2 * 3)
+    @media(min-width: $window_width_3)
+        margin-top: calc($spacing_3 * 3)
+
+/* Visible ------------------------------------------------------------------ */
+
+.md-visible
+    display: none
+    @media(min-width: $window_width_4)
+        display: block
+
+/* Division ----------------------------------------------------------------- */
+
+h1.underline
+    margin-bottom: calc($spacing_1 * 2)
+    @media (min-width: $width_width_2)
+        margin-bottom: calc($spacing_2 * 2)
+    @media (min-width: $width_width_3)s
+        margin-bottom: calc($spacing_3 * 2)
+
+hr
+    background-color: color(#000 a(10%))
+    border: 0
+    height: 1px
+    margin-bottom: calc($spacing_1 * 2)
+    margin-top: calc($spacing_1 * 2)
+    @media (min-width: $width_width_2)
+        margin-bottom: calc($spacing_2 * 2)
+        margin-top: calc($spacing_2 * 2)
+    @media (min-width: $width_width_3)
+        margin-bottom: calc($spacing_3 * 2)
+        margin-top: calc($spacing_3 * 2)
+
+@media (min-width: $window_width_4)
+    .div-right-sm
+        border-right: 1px solid color(#000 a(10%))
+    .div-left-sm
+        border-left: 1px solid color(#000 a(10%))
+
+@media (min-width: $window_width_5)
+    .div-right-md
+        border-right: 1px solid color(#000 a(10%))
+    .div-left-md
+        border-left: 1px solid color(#000 a(10%))
+
+/* Visible ------------------------------------------------------------------ */
+
+.vs-md
+    display: none
+    @media (min-width: $window_width_5)
+        display: block
+
+/* Hide --------------------------------------------------------------------- */
+
+.hd-md
+    display: block
+    @media (min-width: $window_width_5)
+        display: nonev

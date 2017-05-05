@@ -1,0 +1,15 @@
+.bar
+    background-color: white
+    box-shadow: 0 0 1px 1px $shadowColor1
+    height: $navbar_height_1
+    position: fixed
+    top: 0
+    width: 100%
+    z-index: 1
+    @media (min-height: $window_height_2)
+        height: $navbar_height_2
+    @media (min-height: $window_height_3)
+        height: $navbar_height_3
+
+.bar.dark
+    background-color: $darkBackground
