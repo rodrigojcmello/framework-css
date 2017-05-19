@@ -1,0 +1,46 @@
+._lista-tarefa
+    height: calc(100vh - 11.5vw - 4.4vw - 4.4vw)
+    margin-bottom: 0
+    margin-top: 2.2vw
+    overflow-y: scroll
+    padding-left: 0
+
+._lista-tarefa li > div
+    background-color: white
+    border-radius: 4px
+    color: color(black a(70%))
+    height: 11.5vw
+    line-height: 11.5vw
+    margin-bottom: 2.2vw
+    margin-left: 2.2vw
+    margin-right: 2.2vw
+    padding-right: 16px
+
+._lista-tarefa li:last-child > div
+    margin-bottom: 0
+
+._lista-tarefa li.abrir-detalhes > div
+    background-position-x: 0 !important
+    border-radius: 0
+    height: 150px
+    margin-left: 0
+    margin-right: 0
+    transition-duration: 0.3s
+    transition-property: border-radius, margin-left, margin-right, height
+
+._lista-tarefa li.fechar-detalhes > div
+    transition-duration: 0.3s
+    transition-property: border-radius, margin-left, margin-right, height
+
+._lista-tarefa .area-concluir
+    float: left
+    text-align: center
+    width: 11.5vw
+
+._lista-tarefa .area-concluir i
+    color: color(black a(10%))
+    display: block
+    font-size: 8vw
+    height: 11.5vw
+    line-height: 11.5vw
+    vertical-align: middle !important

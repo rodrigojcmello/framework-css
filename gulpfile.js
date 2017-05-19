@@ -16,8 +16,8 @@ const processors = [
     require('precss'),
     require('postcss-calc')({ mediaQueries: true }),
     require('autoprefixer'),
-    require('css-mqpacker')
-    // require('cssnano')
+    require('css-mqpacker'),
+    require('cssnano')
 ];
 
 // -----------------------------------------------------------------------------
@@ -35,6 +35,8 @@ var source = [
     'postcss/nav/01-bar.sss',
     'postcss/nav/02-menu.sss',
     'postcss/nav/03-logo.sss',
+    'postcss/screen.sss',
+    'postcss/_components/*',
     '../custom/*'
     // 'postcss/grid/02-row.sss',
     // 'postcss/grid/03-col.sss',
